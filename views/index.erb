@@ -1,0 +1,30 @@
+<h1>Welcome to Triangle Identification App</h1>
+<form action="/display">
+    <div class="form-group">
+        <label for="weight">Input Weight of Parcel in kilo
+        </label>
+        <input id="weight" name="weight" class="form-control" type="number">
+
+        <label for="height">Input Height of Parcel in cm
+        </label>
+          <input id="height" name="height" class="form-control" type="number">
+
+        <label for="width">Input Width of Parcel in cm
+        </label>
+        <input id="width" name="width" class="form-control" type="number">
+
+        <label for="length">Input Length of Parcel in cm
+        </label>
+        <input id="length" name="length" class="form-control" type="number">
+
+    </div>
+    <button type="submit" class="btn-success">Send</button>
+</form>
+
+<h3> Your Parcel has the following properties: </h3>
+<h4> Weigth : <%=@weight%>kg</h4>
+<h4> Height : <%=@height%>cm</h4>
+<h4> Width : <%=@width%>cm</h4>
+<h4> Length : <%=@length%>cm</h4>
+
+<h3> The Volume is: <%=@result%> cubic cm and The Cost to Ship is: $<%=@cost%> </h3>
